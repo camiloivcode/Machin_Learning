@@ -1,0 +1,42 @@
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.metrics import accuracy_score, confusion_matrix
+
+# 1️⃣ Cargar los datos limpios
+df = pd.read_csv("participantes_limpios.csv")
+
+# 2️⃣ Crear una columna objetivo (1 = puede participar, 0 = no)
+df["puede_participar_num"] = df["Edad"].apply(lambda x: 1 if x >= 18 else 0)
+
+# 3️⃣ Seleccionar las columnas para entrenar el modelo
+X = df[["Edad"]]       # Características
+y = df["puede_participar_num"]  # Objetivo
+
+# 4️⃣ Dividir datos en entrenamiento y prueba
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
+
+# 5️⃣ Crear el modelo
+modelo = DecisionTreeClassifier()
+
+# 6️⃣ Entrenar el modelo
+modelo.fit(X_train, y_train)
+
+# 7️⃣ Hacer predicciones
+predicciones = modelo.predict(X_test)
+
+# 8️⃣ Evaluar el modelo
+precision = accuracy_score(y_test, predicciones)
+print(f"Precisión del modelo: {precision:.2f}")
+
+print("\nMatriz de confusión:")
+print(confusion_matrix(y_test, predicciones))
+
+# 9️⃣ Probar el modelo con nuevos datos
+nueva_edad = int(input("\nIngrese una edad para predecir: "))
+resultado = modelo.predict([[nueva_edad]])
+
+if resultado[0] == 1:
+    print("✅ Puede participar en SENASOFT")
+else:
+    print("❌ No puede participar en SENASOFT")
