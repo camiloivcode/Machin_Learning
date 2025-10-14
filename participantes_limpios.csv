@@ -1,3 +1,5 @@
 Nombre,Edad,Ciudad,Puede_Participar
 Camilo,22,Bogota,True
 Andres,25,Cali,True
+Maria,17,Medellin,False
+Luisa,16,Bogota,False
