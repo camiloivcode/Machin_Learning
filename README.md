@@ -1,6 +1,6 @@
-# 🤖 Ruta de Aprendizaje: Machine Learning para SENA Soft IA
+#  Ruta de Aprendizaje: Machine Learning para SENA Soft IA
 
-## 🌟 Descripción General
+##  Descripción General
 
 Este repositorio documenta mi progreso y desarrollo de habilidades en **Machine Learning (ML)**. El contenido está enfocado en dominar el **flujo de trabajo completo** de ML, desde la limpieza de datos hasta la evaluación robusta de modelos, como preparación para la competencia **SENA Soft IA 2024**.
 
@@ -8,7 +8,7 @@ El aprendizaje se centra en la aplicación práctica de algoritmos esenciales de
 
 ---
 
-## 🗺️ Estructura del Proyecto y Conceptos Aprendidos
+##  Estructura del Proyecto y Conceptos Aprendidos
 
 El repositorio está organizado en módulos secuenciales que siguen el flujo de un proyecto de ML real.
 
@@ -22,7 +22,7 @@ El repositorio está organizado en módulos secuenciales que siguen el flujo de 
 
 ---
 
-## 🛠️ Stack Tecnológico
+##  Stack Tecnológico
 
 * **Lenguaje de Programación:** Python
 * **Librerías Clave:**
@@ -31,7 +31,7 @@ El repositorio está organizado en módulos secuenciales que siguen el flujo de 
 
 ---
 
-## 🎯 Objetivo para SENA Soft IA
+##  Objetivo para SENA Soft IA
 
 El objetivo es aplicar la metodología del **Pipeline** y la **Validación Cruzada** en el dataset de la competencia para garantizar que el modelo sea:
 
