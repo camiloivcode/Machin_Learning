@@ -1,17 +1,17 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# 1️⃣ Cargar los datos limpios
+# 1️ Cargar los datos limpios
 df = pd.read_csv("participantes_limpios.csv")
 
 print("=== Vista general del dataset ===")
 print(df.head())
 
-# 2️⃣ Información general del DataFrame
+# 2️ Información general del DataFrame
 print("\n=== Información del dataset ===")
 print(df.info())
 
-# 3️⃣ Estadísticas descriptivas
+# 3️ Estadísticas descriptivas
 print("\n=== Estadísticas ===")
 print(df.describe())
 
@@ -22,7 +22,7 @@ plt.xlabel("Edad")
 plt.ylabel("Cantidad de personas")
 plt.show()
 
-# 4️⃣ Conteo de participantes por ciudad
+# 4️ Conteo de participantes por ciudad
 conteo_ciudades = df["Ciudad"].value_counts()
 print("\n=== Participantes por ciudad ===")
 print(conteo_ciudades)

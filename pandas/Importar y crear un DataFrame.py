@@ -17,7 +17,7 @@ print(f"Las personas mayores de edad son:\n{mayores}")  # Muestra en pantalla lo
 
 # Guardar los datos en un archivo CSV
 mayores.to_csv("participantes_validos.csv", index=False)  # Guarda los datos filtrados en un archivo CSV
-print("Archivo guardado como participantes_validos.csv ✅")  # Mensaje de confirmación
+print("Archivo guardado como participantes_validos.csv ")  # Mensaje de confirmación
 
 # Leer nuevamente el archivo CSV guardado
 df = pd.read_csv("participantes_validos.csv")  # Carga el archivo CSV en un nuevo DataFrame
